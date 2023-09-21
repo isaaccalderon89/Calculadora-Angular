@@ -1,27 +1,40 @@
-# CalculadoraApp
+![Angular](https://cursosdedesarrollo.com/wp-content/uploads/2019/08/angularjs-logo-600x394-600x394.png)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.2.
+# Ejercicio Básico de Calculadora con Angular
 
-## Development server
+¡Hola gente! :wave: 
+Estoy poniéndome al día con **Angular** ya que lo tenia un poco oxidado. Este WorkSpace es un pequeño ejercicio de como he creado una calculadora simple. 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### ¡Espero que os guste! :smile:
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+***** 
 
-## Build
+## Primeros pasos
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1.  Con el comando *ng new calculadora-app* creamos el proyecto.  En este caso vamos a utilizar los módulos que Angular nos proporciona. 
+![[Pasted image 20230921181425.png]]
 
-## Running unit tests
+2. Como vamos a usar Bootstrap vamos a instalarlo junto a un par de librerías que vamos a usar. 
+![[Pasted image 20230921181714.png]]
+![[Pasted image 20230921181729.png]]
+![[Pasted image 20230921181745.png]]
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+3. A continuación, vamos al archivo *angular.json* a configurar los estilos. 
+![[Pasted image 20230921182254.png]]
 
-## Running end-to-end tests
+### Ahora que ya tenemos todo configurado correctamente ¡A por ello! :rocket:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
+* Agregamos un nuevo modulo, ya que vamos a utilizar el concepto **TWO-WAY BINDING** 
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Agregamos *FormsModule* y automáticamente se importa. 
+![[Pasted image 20230921182930.png]]
+
+* En el modulo *app.components.ts* definimos la clase y los métodos que necesitemos, en este caso solo vamos a utilizar la suma. 
+![[Pasted image 20230921183452.png]]  
+
+* Después, en el archivo *app.componet.html* modificamos el HTML utilizando Bootstrap como nosotros pensemos que es mejor para nuestro objetivo.  ![[Pasted image 20230921185827.png]]
+
+* Arrancamos el proyecto con el comando **ng serve -o** y nos sale la siguiente imagen. 
+![[Pasted image 20230921185944.png]]
