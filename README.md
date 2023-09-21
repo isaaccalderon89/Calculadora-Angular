@@ -12,29 +12,33 @@ Estoy poniéndome al día con **Angular** ya que lo tenia un poco oxidado. Este 
 
 ## Primeros pasos
 
-1.  Con el comando *ng new calculadora-app* creamos el proyecto.  En este caso vamos a utilizar los módulos que Angular nos proporciona. 
-![[Pasted image 20230921181425.png]]
+1.  Con el comando *ng new calculadora-app* creamos el proyecto.  En este caso vamos a utilizar los módulos que Angular nos proporciona.
+![calculadora](image4.png) 
+
 
 2. Como vamos a usar Bootstrap vamos a instalarlo junto a un par de librerías que vamos a usar. 
-![[Pasted image 20230921181714.png]]
-![[Pasted image 20230921181729.png]]
-![[Pasted image 20230921181745.png]]
+![bootstrap](image.png)
+![jquery](image1.png)
+![popper](image2.png)
 
 3. A continuación, vamos al archivo *angular.json* a configurar los estilos. 
-![[Pasted image 20230921182254.png]]
+![json](image.png)
+
 
 ### Ahora que ya tenemos todo configurado correctamente ¡A por ello! :rocket:
 
 
 * Agregamos un nuevo modulo, ya que vamos a utilizar el concepto **TWO-WAY BINDING** 
 
-Agregamos *FormsModule* y automáticamente se importa. 
-![[Pasted image 20230921182930.png]]
+Agregamos *FormsModule* y automáticamente se importa.
+![forms](image6.png) 
 
-* En el modulo *app.components.ts* definimos la clase y los métodos que necesitemos, en este caso solo vamos a utilizar la suma. 
-![[Pasted image 20230921183452.png]]  
+
+* En el modulo *app.components.ts* definimos la clase y los métodos que necesitemos, en este caso solo vamos a utilizar la suma.
+ ![clase](image7.png)
 
 * Después, en el archivo *app.componet.html* modificamos el HTML utilizando Bootstrap como nosotros pensemos que es mejor para nuestro objetivo.  ![[Pasted image 20230921185827.png]]
+![html](image8.png)
 
 * Arrancamos el proyecto con el comando **ng serve -o** y nos sale la siguiente imagen. 
-![[Pasted image 20230921185944.png]]
+![aplicacion](image9.png)
